@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.zengcheng.myfirstandroid.view.PieChart
+        android:id="@+id/Pie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        app:autoCenterPointerInSlice="true"
+        app:highlightStrength="1.12"
+        app:labelColor="@android:color/black"
+        app:labelHeight="20dp"
+        app:labelPosition="left"
+        app:labelWidth="110dp"
+        app:labelY="85dp"
+        app:pieRotation="0"
+        app:pointerRadius="4dp"
+        app:showText="true"></com.example.zengcheng.myfirstandroid.view.PieChart>
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        />
+</LinearLayout>

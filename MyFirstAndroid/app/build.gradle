@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.zengcheng.myfirstandroid"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+}
+afterEvaluate {
+    def String appPath = project(':app').getProjectDir().absolutePath + "/src"
+    String fileName = "MainActivity.java"
+    String result = null;
+//    File file = FileUtils.getFile(appPath, fileName)
+    FileUtils.getFilePath(appPath, fileName, result);
+    printf("---result:" + result)
+//    printf("找到文件：%s", file)
+}
+
+public class FileUtils {
+    public static String getFileName(String folderPath, String fileName) {
+        File file = new File(folderPath);
+        if (!file.exists()) {
+            printf("---folderPath不存在---" + folderPath)
+            return "not exits";
+        }
+        if (file.isDirectory()) {
+            File[] files = file.listFiles()
+            for (File f : files) {
+                printf("---递归调用---" + f.absolutePath)
+                return getFileName(f.absolutePath, fileName);
+            }
+        } else {
+            if (file.name.equals(fileName)) {
+                printf("---找到文件---" + file.absolutePath + "\n")
+                return file.absolutePath;
+            }
+        }
+        printf("---未找到文件，即将返回not exits---" + "\n")
+        return "not exits";
+    }
+
+    public static void getFilePath(String folderPath, String fileName, String resultPath) {
+        File file = new File(folderPath);
+        if (!file.exists()) {
+            printf("---folderPath不存在---" + folderPath+"\n")
+            return;
+//            return "not exits";
+        }
+        if (file.isDirectory()) {
+            File[] files = file.listFiles()
+            for (File f : files) {
+                printf("---递归调用---" + f.absolutePath + "\n")
+                getFilePath(f.absolutePath, fileName, resultPath);
+            }
+        } else {
+            if (file.name.equals(fileName)) {
+                printf("---找到文件---" + file.absolutePath + "\n")
+                resultPath = file.absolutePath;
+                return;
+//                return file.absolutePath;
+            }
+        }
+        printf("---本次递归没找到---" + "\n")
+//        return "not exits";
+    }
+}

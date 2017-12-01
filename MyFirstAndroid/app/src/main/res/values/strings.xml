@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+
+    <string name="app_name">test</string>
+    <string name="enter_galerry">进入图库</string>
+    <string name="connect_cemara">连接相机</string>
+    <string name="stop_scan">停止扫描</string>
+    <string name="start_scan">开始扫描</string>
+    <string name="wifi_scanning">正在搜索 Wi-Fi</string>
+    <string name="choose_camera_wifi">请选择相机 Wi-Fi</string>
+    <string name="wifi_connecting">正在连接</string>
+    <string name="wifi_name">Wi-Fi 名称：</string>
+    <string name="input_password_hint">请输入密码</string>
+    <string name="input_password_title">输入密码</string>
+    <string name="pass_word_empty">密码不能为空</string>
+    <string name="connect_success">连接成功</string>
+    <string name="connect_fail_title">连接失败</string>
+    <string name="connect_timeout">连接超时</string>
+    <string name="password_error">请检查密码是否正确</string>
+    <string name="choose_mode_title">选择模式</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确定</string>
+    <string name="start_session_fail">开启会话失败</string>
+    <string name="mijia_sport_camera">米家小相机</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">以后再说</string>
+    <string name="new_firmware_coming">有新的固件更新！\n</string>
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="battey_low">相机电量低，请连接电源。</string>
+    <string name="connect_break_advice">请检查手机是否已连接设备，Wi-Fi是否\n开启或重启相机</string>
+    <string name="connect_again">重新连接</string>
+    <string name="connect_break_title">连接断开</string>
+    <!-- ChooseModeAapter-->
+    <string name="mode_photo_defalt">普通拍照</string>
+    <string name="mode_photo_timing">定时拍照</string>
+    <string name="mode_photo_continous">连续拍照</string>
+    <string name="mode_camera_defalut">普通摄像</string>
+    <string name="mode_camera_delay">延时摄像</string>
+    <string name="mode_camera_slow">慢动作</string>
+    <string name="mode_photo_delay">延时拍照</string>
+    <string name="mode_camera_loop">循环摄像</string>
+    <string name="mode_photo_camera">摄像+拍照</string>
+    <string name="set_success">设置成功</string>
+    <string name="syn_success">同步成功</string>
+
+    <!--以下为media库使用-->
+    <string name="N_A">N/A</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+
+    <!--ControlActivity-->
+    <string name="photo_size">照片尺寸</string>
+    <string name="get_all_setting_fail">获取当前设置失败</string>
+    <string name="get_all_setting_suc">获取当前设置成功</string>
+    <string name="cur_electric">当前电量</string>
+    <string name="second">秒</string>
+    <string name="minute">分钟</string>
+    <string name="frame">帧</string>
+    <string name="choose_exit_pattern">请选择退出方式</string>
+    <string name="keep_connect">保持连接</string>
+    <string name="close_connect">断开</string>
+    <string name="time_lapse_capturing">延时拍照中</string>
+    <string name="resolution_ntsc_0">4K\n30帧</string>
+    <string name="resolution_ntsc_1">2.5K\n30帧</string>
+    <string name="resolution_ntsc_2">1080P\n100帧</string>
+    <string name="resolution_ntsc_3">1080P\n60帧</string>
+    <string name="resolution_ntsc_4">1080P\n30帧</string>
+    <string name="resolution_ntsc_5">720P\n200帧</string>
+    <string name="resolution_ntsc_6">720P\n120帧</string>
+    <string name="time_lapse_recording">延时摄影中</string>
+    <string name="resolution_pal_0">4K\n25帧</string>
+    <string name="resolution_pal_1">2.5K\n25帧</string>
+    <string name="resolution_pal_2">1080P\n100帧</string>
+    <string name="resolution_pal_3">1080P\n50帧</string>
+    <string name="resolution_pal_4">1080P\n25帧</string>
+    <string name="resolution_pal_5">720P\n200帧</string>
+    <string name="resolution_pal_6">720P\n100帧</string>
+    <!-- 设置页使用-->
+    <string name="resolution_ntsc_set_0">3840x2160|30帧/秒</string>
+    <string name="resolution_ntsc_set_1">2560x1440|30帧/秒</string>
+    <string name="resolution_ntsc_set_2">1920x1080|100帧/秒</string>
+    <string name="resolution_ntsc_set_3">1920x1080|60帧/秒</string>
+    <string name="resolution_ntsc_set_4">1920x1080|30帧/秒</string>
+    <string name="resolution_ntsc_set_5">1280x720|200帧/秒</string>
+    <string name="resolution_ntsc_set_6">1280x720|120帧/秒</string>
+
+    <string name="resolution_pal_set_0">3840x2160|25帧/秒</string>
+    <string name="resolution_pal_set_1">2560x1440|25帧/秒</string>
+    <string name="resolution_pal_set_2">1920x1080|100帧/秒</string>
+    <string name="resolution_pal_set_3">1920x1080|50帧/秒</string>
+    <string name="resolution_pal_set_4">1920x1080|25帧/秒</string>
+    <string name="resolution_pal_set_5">1280x720|200帧/秒</string>
+    <string name="resolution_pal_set_6">1280x720|100帧/秒</string>
+
+
+    <!--DeviceSetActivity-->
+    <string name="last_used_mode">上次使用的模式</string>
+    <string name="volume_high">高</string>
+    <string name="volume_low">低</string>
+    <string name="volume_mute">静音</string>
+    <string name="all_on">全部开启</string>
+    <string name="status_on">状态开启</string>
+    <string name="all_off">全部关闭</string>
+
+
+    <!--SettingActivity-->
+    <string name="cur_setting_mode">当前模式设置</string>
+    <string name="photo_resolution">照片分辨率</string>
+    <string name="photo_quality">画质</string>
+    <string name="photo_meteria_mode">测光模式</string>
+    <string name="photo_stamp">时间戳</string>
+    <string name="photo_shutter">快门时间</string>
+    <string name="photo_wb">白平衡</string>
+    <string name="photo_iso">感光度</string>
+    <string name="photo_digital_effect">色彩</string>
+    <string name="photo_self_time">倒计时</string>
+    <string name="photo_burst_frequence">拍摄频率</string>
+    <string name="photo_time_lapse">拍摄间隔</string>
+    <string name="video_resolution">视频分辨率</string>
+    <string name="video_resolution_rate">视频解析度</string>
+    <string name="video_quality">画质</string>
+    <string name="video_stamp">时间戳</string>
+    <string name="video_meteria_mode">测光模式</string>
+    <string name="video_white_balance">白平衡</string>
+    <string name="video_iso">感光度</string>
+    <string name="video_ev_bias">曝光补偿</string>
+    <string name="video_time_lapse">拍摄间隔</string>
+    <string name="video_time_lapse_length">视频长度</string>
+    <string name="video_rate">速率</string>
+    <string name="video_loop_length">视频长度</string>
+    <string name="video_piv_lapse">抓拍间隔</string>
+    <string name="device_setting">设备设置</string>
+    <string name="photo_raw">RAW</string>
+    <string name="water_mode">防水内壳模式</string>
+    <string name="default_boost_mode">开机默认模式</string>
+    <string name="screen_turn">屏幕翻转</string>
+    <string name="prompt_voice">提示音</string>
+    <string name="system_type">制式</string>
+    <string name="wifi_setting">Wi-Fi设置</string>
+    <string name="led_mode">LED灯</string>
+    <string name="camera_clock">相机时间</string>
+    <string name="syn_clock_msg">以手机时间为基准，校准相机时间吗？</string>
+    <string name="auto_power_off">自动关机</string>
+    <string name="record_length">拍摄间隔、视频长度</string>
+    <string name="normal_record">视频解析度</string>
+    <string name="device_type">型号</string>
+    <string name="device_serial_no">序列号</string>
+    <string name="device_firmware_version">固件版本</string>
+    <string name="device_sd_card">TF卡</string>
+    <string name="device_reset">重置相机</string>
+    <string name="piv_record_success">抓拍成功</string>
+
+    <!--相机媒体库-->
+    <string name="edit_btn">制作</string>
+    <string name="all_product">全部</string>
+    <string name="video_item">视频</string>
+    <string name="image_item">图片</string>
+    <string name="video_rename">重命名</string>
+    <string name="cut_btn_des">剪切</string>
+    <string name="delete">删除</string>
+    <string name="download">下载</string>
+    <string name="no_down">未下载</string>
+    <string name="share">分享</string>
+    <string name="ensure">确定</string>
+    <string name="local_media">本地</string>
+    <string name="online_media">相机</string>
+    <string name="type">型号</string>
+    <string name="start">开始</string>
+    <string name="downing_media">下载中<xliff:g id="xxx">%s</xliff:g></string>
+    <string name="delete_message">是否删除所选项?</string>
+    <string name="finish">确定</string>
+    <string name="down_sdcard"><xliff:g id="xxx">%s</xliff:g>下载中</string>
+    <string name="login_result_net">网络连接受限...</string>
+    <string name="select_all">全选</string>
+    <string name="undo_select_all">全不选</string>
+    <string name="select_item">已选择</string>
+    <string name="camera">相机</string>
+    <string name="device">设备</string>
+
+    <string name="sfine">超精细</string>
+    <string name="fine">精细</string>
+    <string name="normal">正常</string>
+    <string name="stamp_off">关闭</string>
+    <string name="stamp_date">日期</string>
+    <string name="stamp_time">时间</string>
+    <string name="stamp_date_time">时间/日期</string>
+    <string name="auto">自动</string>
+    <string name="incandescent">白炽灯</string>
+    <string name="sunny">晴天</string>
+    <string name="cloudy">多云</string>
+    <string name="color_off">关</string>
+    <string name="color_vivid">鲜艳</string>
+    <string name="color_black_white">黑白</string>
+    <string name="color_art">艺术</string>
+    <string name="color_film">电影</string>
+    <string name="color_sepia">复古</string>
+    <string name="spot">点测光</string>
+    <string name="center">中央测光</string>
+    <string name="average">平均测光</string>
+    <string name="raw_off">关闭</string>
+    <string name="raw_on">开启</string>
+    <string name="select_item_pin">项</string>
+
+    <!--DeviceSetActivity-->
+    <string name="confirm_reset">您确定要重置相机？</string>
+
+    <!--ModeChooseActivity-->
+    <string name="time_out_toast">请求超时，请检查相机wifi是否连接</string>
+    <!-- SDCardSettingActivity-->
+    <string name="sd_card_size">TF卡存储空间</string>
+    <string name="text_total">/ 总共</string>
+    <string name="text_usable">可用</string>
+    <string name="format_sdcard">格式化TF卡</string>
+    <string name="wifi_psw">Wi-Fi 密码</string>
+    <string name="input_new_password">输入8位新密码</string>
+    <string name="show_password">显示密码</string>
+    <string name="hide_password">隐藏密码</string>
+    <string name="check_format">格式化TF卡？</string>
+    <string name="format_success">TF格式化成功</string>
+    <string name="reset_camera">重置相机？</string>
+    <string name="unit_gb">G</string>
+    <string name="unit_mb">M</string>
+    <string name="unit_kb">K</string>
+    <string name="remain_space_about">还可拍摄大约</string>
+    <string name="photo">照片</string>
+    <string name="or">或者</string>
+    <string name="video">视频</string>
+    <string name="photo_unit">张</string>
+
+    <!-- WifiSettingActivity-->
+    <string name="set_wifi_success">修改成功</string>
+    <string name="set_wifi_fail">修改成功</string>
+    <string name="wifi_psw_invalid">请输入8-63个字符作为密码</string>
+
+    <!--CntCameraActivity-->
+    <string name="click_retry">点击重试</string>
+    <string name="use_system_wifi_setting"><u>可尝试从系统Wi-Fi设置直接连接或者\n重启相机Wi-Fi</u></string>
+    <!--FirmWareActivity-->
+    <string name="wifi_name_hint">FMC1_XXXXXXX</string>
+    <string name="firm_download_suc">成功下载升级包，请开启相机并打开相机\nWi-Fi，将手机连接到如下相机Wi-Fi:</string>
+    <string name="firmware_updating">正在升级固件...</string>
+    <string name="dont_break">上传固件中，请不要断开与相机Wi-Fi的连接</string>
+    <string name="update_suc">升级成功!</string>
+    <string name="firmware_update">固件更新</string>
+    <string name="start_download">开始下载</string>
+    <string name="firm_downloading">正在下载固件\n</string>
+    <string name="percent_sign">%</string>
+    <string name="update">开始升级</string>
+    <string name="can_update_now">成功下载升级包，可以进行固件升级</string>
+    <string name="update_complete">完成</string>
+    <string name="upload_error">上传失败</string>
+    <string name="download_error">下载失败</string>
+    <string name="update_timeout">更新超时</string>
+    <string name="fail_advice">请确认相机Wi-Fi是否工作正常，或者\n尝试使用电脑将固件下载拷贝至TF卡中，手动升级。</string>
+    <string name="charge_advice">新固件已准备好\n相机电量低，请连接电源。</string>
+    <string name="tcard_error">新固件已准备好\nTF卡异常，请更换TF卡。</string>
+    <string name="tcard_not_enough">新固件已准备好\nTF卡容量不足，请删除文件或格式化TF卡。</string>
+    <string name="tcard_miss">新固件已准备好\n无TF卡，请插入TF卡。</string>
+
+    <!--ConnectGuideActivity-->
+    <string name="how2connect_title">如何连接</string>
+    <string name="no_1">1</string>
+    <string name="no_2">2</string>
+    <string name="no_3">3</string>
+    <string name="no_4">4</string>
+    <string name="start_camera">开启相机</string>
+    <string name="how2start_camera">长按相机快门开启相机</string>
+    <string name="open_wifi">打开Wi-Fi，查看Wi-Fi信息</string>
+    <string name="how2open_wifi">向下滑动屏幕，点击Wi-Fi按钮，即可打开Wi-Fi</string>
+    <string name="how2set_wifi">点击设置按钮，进入Wi-Fi信息选项查看Wi-Fi\n名称和密码。（默认为5G Wi-Fi，请确保手机支持5G\nWi-Fi，如不支持可在设置页更改Wi-Fi频率）</string>
+    <string name="connect_wifi">连接Wi-fi</string>
+    <string name="how2connect_wifi">请将手机Wi-Fi连接到相机Wi-Fi信息提供的网络，\n并确认连接成功。\n（默认密码：1234567890）</string>
+    <string name="enter_camera">进入相机</string>
+    <string name="how2enter_camera">打开米家App,选择连接设备，连接成功即可实时\n显示相机拍摄画面。进入相机</string>
+    <string name="make_sure_connected">请连接相机</string>
+    <string name="no_local_media_data">本地媒体库暂无媒体信息</string>
+    <string name="no_online_media_data">在线媒体库暂无媒体信息</string>
+</resources>
