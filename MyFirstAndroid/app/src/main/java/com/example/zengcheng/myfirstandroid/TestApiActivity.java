@@ -2,6 +2,7 @@ package com.example.zengcheng.myfirstandroid;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcel;
@@ -30,10 +31,72 @@ public class TestApiActivity extends Activity {
         findViewById(R.id.btn_test).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                testSet();
-                testParcel();
+                List<Point> points = generatePath(1000, 200, 5, 0);
+                generateQuadPath(points, 1000, 200);
             }
+//                testSet();
+//                testParcel();
+//            }
         });
+    }
+
+    public List<Point> generatePath(final int width, final int height, final int offsetX, final int offsetY) {
+        int startX = 0 + offsetX;
+        int startY = height / 2;
+        int curLength = 0;
+        List<Point> points = new ArrayList<>();
+        points.add(new Point(startX, startY));
+        while (curLength < width) {
+            int moveX = getRandom((width - curLength) / 5, width - curLength);
+            if (curLength > width - 80) {
+                moveX = width - curLength;
+            }
+            int x = startX + moveX;
+            curLength += moveX;
+            int y = 0;
+            Point point = new Point(x, y);
+            startX = x;
+            points.add(point);
+        }
+        return points;
+    }
+
+    private List<QuadPath> generateQuadPath(List<Point> points, int width, int height) {
+
+        List<QuadPath> path = new ArrayList<>();
+        boolean upper = true;
+        for (int i = 0; i < points.size()-1; i++) {
+            Point a = points.get(i);
+            Point c = points.get(i + 1);
+            int x = a.x + (c.x - a.x) / 2;
+            int y = getRandom(height / 5, height/2);
+            if (!upper) {
+                y = -y;
+            }
+            y = y + height / 2;
+            Point b = new Point(x, y);
+            upper = !upper;
+            QuadPath p = new QuadPath(a, b, c);
+            path.add(p);
+        }
+        return path;
+    }
+
+    class QuadPath {
+        Point a, b, c;
+
+        public QuadPath(Point a, Point b, Point c) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+    }
+
+    private int getRandom(int min, int max) {
+        if (min >= max) {
+            throw new IllegalArgumentException();
+        }
+        return (int) (min + Math.random() * (max - min));
     }
 
     private void testSet() {

@@ -10,4 +10,9 @@
     <color name="bluegrass">#ff96c9b5</color>
     <color name="turquoise">#ff86b9b5</color>
     <color name="slate">#ff76a9b5</color>
+    <color name="pola_green">#50e3c2</color>
+    <color name="pola_blue">#4089e5</color>
+    <color name="pola_yellow">#f8e71e</color>
+    <color name="pola_red">#fc5b59</color>
+
 </resources>

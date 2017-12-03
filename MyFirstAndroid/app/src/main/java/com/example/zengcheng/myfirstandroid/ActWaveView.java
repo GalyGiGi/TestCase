@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
 
-import com.example.zengcheng.myfirstandroid.view.MyWaveView;
 import com.example.zengcheng.myfirstandroid.view.MyWaveView2;
 
 /**
@@ -71,4 +70,5 @@ public class ActWaveView extends AppCompatActivity {
 //        seekbar.setProgress(myview.getWaveHeight());
 //        seekbarspeed.setProgress(myview.getWaveSpeed());
     }
+
 }

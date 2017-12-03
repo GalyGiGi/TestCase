@@ -67,7 +67,8 @@
 
         </activity>
         <activity android:name=".ReceiveDataActivity"></activity>
-        <activity android:name=".ActWaveView">
+        <activity android:name=".ActWaveView"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

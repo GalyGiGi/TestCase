@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.example.zengcheng.myfirstandroid.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -109,15 +111,17 @@ public class MyWaveView2 extends View {
     }
 
     private void initWaves() {
-        Wave w1 = new Wave(Color.BLUE, 5, 50, 100, 0, mContext, this,1);
-        Wave w2 = new Wave(Color.RED, 5, 50, 200, 0, mContext, this,2);
-        Wave w3 = new Wave(Color.GREEN, 5, 50, 300, 0, mContext, this,3);
-        Wave w4 = new Wave(Color.GRAY, 5, 50, 280, 0, mContext, this,4);
+        Wave w1 = new Wave(mContext.getResources().getColor(R.color.pola_red, null), 8, 50, 100, 0, mContext, this, 1);
+        Wave w2 = new Wave(mContext.getResources().getColor(R.color.pola_blue, null), 8, 50, 200, 0, mContext, this, 2);
+        Wave w3 = new Wave(mContext.getResources().getColor(R.color.pola_green, null), 8, 50, 300, 0, mContext, this, 3);
+        Wave w4 = new Wave(mContext.getResources().getColor(R.color.pola_yellow, null), 8, 50, 280, 0, mContext, this, 4);
+//        Wave w5 = new Wave(Color.GRAY, 7, 50, 280, 0, mContext, this, 4);
         mWaves = new ArrayList<Wave>();
         mWaves.add(w1);
         mWaves.add(w2);
         mWaves.add(w3);
         mWaves.add(w4);
+//        mWaves.add(w5);
     }
 
 }
